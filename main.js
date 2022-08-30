@@ -67,3 +67,19 @@ function slider() {
                 changeVal(num - 1)
             }
         })
+        $btnPlugs.click(function () {
+            var num = parseInt($input.val())
+            if (maximize==null||num < maximize) {
+                $input.val(num + 1)
+                changeVal(num + 1)
+            }
+        })
+        var keyUpTime
+        $input.keyup(function () {
+            clearTimeout(keyUpTime)
+            keyUpTime = setTimeout(function() {
+                var num = $input.val()
+                if (num == ''){
+                    num = minimum
+                    $input.val(minimum)
+                }
