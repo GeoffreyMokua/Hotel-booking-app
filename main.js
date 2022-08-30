@@ -98,3 +98,24 @@ function slider() {
                 }
             },300)
         })
+        $input.focus(function () {
+            var num = $input.val()
+            if (num == 0) $input.select()
+        })
+
+        function changeVal(num) {
+            $input.attr('data-num', num)
+            $btnMinus.prop('disabled', false)
+            $btnPlugs.prop('disabled', false)
+            if (num <= minimum) {
+                $btnMinus.prop('disabled', true)
+                onMinimum.call(this, num)
+            } else if (maximize!=null&&num >= maximize) {
+                $btnPlugs.prop('disabled', true)
+                onMaximize.call(this, num)
+            }
+            onChange.call(this, num)
+        }
+        return $handleCounter
+    };
+})(jQuery)
