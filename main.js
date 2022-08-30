@@ -16,7 +16,7 @@ function slider() {
 ;(function () {
     'use strict';
     $.fn.handleCounter = function (options) {
-        var $input,
+        let $input,
             $btnMinus,
             $btnPlugs,
             minimum,
