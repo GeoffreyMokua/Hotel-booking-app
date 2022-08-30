@@ -58,3 +58,12 @@ function slider() {
         if (!writable) {
             $input.prop('disabled', true)
         }
+        changeVal(inputVal)
+        $input.val(inputVal)
+        $btnMinus.click(function () {
+            var num = parseInt($input.val())
+            if (num > minimum) {
+                $input.val(num - 1)
+                changeVal(num - 1)
+            }
+        })
