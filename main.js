@@ -83,3 +83,18 @@ function slider() {
                     num = minimum
                     $input.val(minimum)
                 }
+                var reg = new RegExp("^[\\d]*$")
+                if (isNaN(parseInt(num)) || !reg.test(num)) {
+                    $input.val($input.attr('data-num'))
+                    changeVal($input.attr('data-num'))
+                } else if (num < minimum) {
+                    $input.val(minimum)
+                    changeVal(minimum)
+                }else if (maximize!=null&&num > maximize) {
+                    $input.val(maximize)
+                    changeVal(maximize)
+                } else {
+                    changeVal(num)
+                }
+            },300)
+        })
