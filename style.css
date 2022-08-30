@@ -47,7 +47,7 @@
 }
 .tm-nav div ul li a:hover{
     
-    color: #ec3c6a;
+    color: tomato;
 }
 .tm-list::after{
     content: url("../images/circle.png");
