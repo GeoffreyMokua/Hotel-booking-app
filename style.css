@@ -55,3 +55,15 @@
    
 }
 /* style for the header starts here */
+
+
+/* style for the slider starts here */
+.tm-slider{
+    position: relative;
+}
+.tm-sliderimage{
+    width: 100%;
+   display: block;
+   
+   
+}
