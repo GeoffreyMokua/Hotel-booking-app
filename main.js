@@ -13,9 +13,52 @@ function slider() {
   setTimeout(slider, 10000); // Change image every 2 seconds
 } 
 // js for the booking section
-;(function () {
+    
+        let data = document.getElementsByClassName('data');
+
+        const name = document.getElementById("name1");
+        const email = document.getElementById("email1");
+
+        
+
+        function toggleForm(){
+
+            const booking = document.getElementById("booking");
+
+            const form = document.querySelector('form');
+            window.onload=() => {
+                form.className = "toggle"
+                console.log("come");
+            }
+            booking.addEventListener("click", () => {
+                
+
+                if(form.className=="toggle"){
+                    form.className='';
+                    console.log(form.className);
+
+                }
+                else{
+                    form.className = "toggle";
+                    console.log(form.className);
+                }
+            })
+
+        }
+         toggleForm();
+
+
+
+
+
+
+
+
+
+
+ /*;(function () {
     'use strict';
-    $.fn.handleCounter = function (options) {
+     $.fn.handleCounter = function (options) {
         let $input,
             $btnMinus,
             $btnPlugs,
@@ -138,4 +181,4 @@ $(function ($) {
     
   
     
-    });
+    }); */
