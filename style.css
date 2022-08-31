@@ -170,10 +170,16 @@ padding-bottom: 10%;
     outline: none;
 }
 /*booking styling */
+
 .tm-booking
 {
      background: #353535;
     position: relative;
+    
+}
+.toggle{
+    display: none;
+    
 }
 .tm-main{
     display: none;

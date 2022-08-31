@@ -16,58 +16,59 @@
                  <ul>
                      <li class="tm-list"><a href="index.html">Home</a></li>
                    
-                     <li class="tm-list"><a href="onclick">Booking</a>
-                        <section class="tm-main">
-                            <p>Booking</p>
-                     </section>
-                     <section class="tm-booking">
-                    
-                        <form>
-                            <div class="tm-form1">
-                        <input type="text" name="name" placeholder="Name">  
-                        <input type="email" name="email" placeholder="E-mail"> 
-                        <label  for="rooms" id="inlinelable">Rooms</label>
-                        <select name="Rooms" id="rooms">
-                            <option value="luxurys">Luxury Suite</option>
-                            <option value="deluxs">Delux Suite</option>
-                            <option value="premiers">Premier Suite</option>
-                            <option value="Luxuryr">Luxury Room</option>
-                            <option value="deluxs">Delux Room</option>
-                            <option value="premierr">Premier Room</option>
-                        </select> 
-                        <div class="tm-num1" id="handleCounter1">    
-                            <label for="number1" >Number of Rooms</label><br/>
-                                <button type="button" class="counter-minus btn btn-primary">- </button>
-                                <input type="text" name="number1" id="number1" value="1">
-                                 <button type="button" class="counter-plus btn btn-primary">+  </button>
-                                </div>
-                            <div class="tm-num2" id="handleCounter2">      
-                                <label for="number2">Number of Guests</label><br/>
-                                <button type="button" class="counter-minus btn btn-primary">-</button>
-                                <input type="text" name="number2" id="number2" value="1">
-                                    <button type="button" class="counter-plus btn btn-primary">+</button>
-                                    </div>
-                                </div>
-        
-                                <div class="vertical-line"> </div>
-                                
-                            <div class="tm-form2">
-                           <div class="tm-cl">
-                                <label for="date1" class="arrival">Visiting Dates from Arrival to Departure</label>
+                     <li class="tm-list" id="booking"><a href="#">Booking</a>
                         
-                             <input type="text" name="date1" class="range" readonly="readonly"> 
-                                
-                        
-                             <input type="submit" id="sub" value="Proceed">
-                            </div>
-                            </div>
-                                </form>
-                          </section>
                     </li>
                      <li><a href="contact.html">Contact</a></li>
                  </ul>    
                  </div>
              </nav>
+             <section class="tm-main">
+                <p>Booking</p>
+         </section>
+         <section class="tm-booking">
+        
+            <form class="form1">
+                <div class="tm-form1">
+            <input id="name1" type="text" name="name" placeholder="Name">  
+            <input id="email1" type="email" name="email" placeholder="E-mail"> 
+            <label  for="rooms" id="inlinelable">Rooms</label>
+            <select name="Rooms" id="rooms">
+                <option value="luxurys">Luxury Suite</option>
+                <option value="deluxs">Delux Suite</option>
+                <option value="premiers">Premier Suite</option>
+                <option value="Luxuryr">Luxury Room</option>
+                <option value="deluxs">Delux Room</option>
+                <option value="premierr">Premier Room</option>
+            </select> 
+            <div class="tm-num1" id="handleCounter1">    
+                <label for="number1" >Number of Rooms</label><br/>
+                    <button type="button" class="counter-minus btn btn-primary">- </button>
+                    <input type="number" name="number1" id="number1" value="1">
+                     <button type="button" class="counter-plus btn btn-primary">+  </button>
+                    </div>
+                <div class="tm-num2" id="handleCounter2">      
+                    <label for="number2">Number of Guests</label><br/>
+                    <button type="button" class="counter-minus btn btn-primary">-</button>
+                    <input type="number" name="number2" id="number2" value="1">
+                        <button type="button" class="counter-plus btn btn-primary">+</button>
+                        </div>
+                    </div>
+
+                    <div class="vertical-line"> </div>
+                    
+                <div class="tm-form2">
+               <div class="tm-cl">
+                    <label for="date1" class="arrival">Visiting Dates from Arrival to Departure</label>
+            
+                 <input type="text" name="date1" class="range" readonly="readonly"> 
+                    
+            
+                 <input type="submit" id="sub" value="Proceed">
+                </div>
+                </div>
+                    </form>
+              </section>
     </header>
     <section class="tm-imgslider">
         <div><div class="tm-slider"><img class="tm-sliderimage" src="images/image_slider 1.jpg" alt="Majestic Hotel"> 
