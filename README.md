@@ -10,7 +10,7 @@
  ##### License
  ##### Authors Info
  ## Description
-This is a simple hotel-booking website. It helps one to book and reserve a room or a conference from the comfort of their places.
+This is a simple hotel-booking website. It helps one to book and reserve a room or a conference hall from the comfort of their places.
  ## Installation
  ### Requirements
   ##### Either a computer,phone or tablet
