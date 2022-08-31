@@ -1,0 +1,19 @@
+{
+  "name": "hotel_booking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeoffreyMokua/Hotel-booking-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeoffreyMokua/Hotel-booking-app/issues"
+  },
+  "homepage": "https://github.com/GeoffreyMokua/Hotel-booking-app#readme"
+}
