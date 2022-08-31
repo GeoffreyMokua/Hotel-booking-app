@@ -1,3 +1,5 @@
+
+ // js for sliding images section
 let slideIndex = 0;
 slider();
 
