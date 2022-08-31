@@ -1,8 +1,7 @@
-# Hotel-booking-app
-This is a simple HTML/CSS and Javascript website for hotel booking.
+
 # Portfolio
 #### By Geoffrey Mokua
-### It is a description of my Agriculture website
+### It is a description of my Hotel Booking Website
 ## Table of content
  ##### Description
  ##### Installation Requirement
@@ -11,7 +10,7 @@ This is a simple HTML/CSS and Javascript website for hotel booking.
  ##### License
  ##### Authors Info
  ## Description
- This is a website that shows an agriculture website. It contains the different aspects of agriculture. The website has different methods of farming one can do.
+This is a simple hotel-booking website. It helps one to book and reserve a room or a conference from the comfort of their places.
  ## Installation
  ### Requirements
   ##### Either a computer,phone or tablet
@@ -19,6 +18,7 @@ This is a simple HTML/CSS and Javascript website for hotel booking.
  ## Technology Used
  ##### HTML- which was used to build the structure of the pages
  ##### CSS- it was used to style the pages including the navigating bar from the header towards the middle section and the footer.
+ ##### Javascript - was used to make the pages interactive and responsive
  ## License
  MIT License
 
@@ -41,7 +41,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
  ### link to github pages
- https://geoffreymokua.github.io/AgricultureWebsite/
+ https://geoffreymokua.github.io/Hotel-booking-app/
  ### Authors Info
  Slack Profile- Geoffrey Mokua
  Linkedin- Geoffrey Nyakundi
