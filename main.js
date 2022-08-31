@@ -47,12 +47,19 @@ function slider() {
         }
          toggleForm();
 
+         function getDate(){
+            const date = document.getElementsByClassName("range");
+            let today = new Date().toLocaleDateString()
 
+            console.log(today)
+         }
+         getDate();
 
-
-
-
-
+         function activeReg() {
+            let btn = document.getElementById("sub");
+            btn.removeAttribute("disabled");
+            btn.style.cursor = "pointer";
+          }
 
 
 
