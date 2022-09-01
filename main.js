@@ -62,6 +62,24 @@ function slider() {
             btn.removeAttribute("disabled");
             btn.style.cursor = "pointer";
           }
+    // Function to increment count
+    const handleIncrement = () => {
+    count++;
+    totalCount.innerHTML = count;
+  };
+  // Function to decrement count
+   const handleDecrement = () => {
+    count--;
+    totalCount.innerHTML = count;
+  };
+
+  // Select increment and decrement buttons
+const handleCounter1 = document.getElementById("handleCounter1");
+const handleCounter2 = document.getElementById("handleCounter2");
+
+// Add click event to buttons
+incrementCount.addEventListener("click", handleIncrement);
+decrementCount.addEventListener("click", handleDecrement);
 
 
 
