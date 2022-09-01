@@ -82,5 +82,18 @@ incrementCount.addEventListener("click", handleIncrement);
 decrementCount.addEventListener("click", handleDecrement);
 
 
+// Make an API call
+fetch("http://localhost:3000/profile")
+	.then((res) => {
+		if (res.ok) {
+			console.log("Your Fetch request was successful");
+		} else {
+			console.log("Your Fetch request failed");
+		}
+		return res.json();
+	})
+
+
+
 
         
