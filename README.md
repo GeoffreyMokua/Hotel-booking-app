@@ -1,5 +1,5 @@
 
-# Portfolio
+# About The Project
 #### By Geoffrey Mokua
 ### It is a description of my Hotel Booking Website
 ## Table of content
