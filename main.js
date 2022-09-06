@@ -78,12 +78,12 @@ const handleCounter1 = document.getElementById("handleCounter1");
 const handleCounter2 = document.getElementById("handleCounter2");
 
 // Add click event to buttons
-incrementCount.addEventListener("click", handleIncrement);
-decrementCount.addEventListener("click", handleDecrement);
+const incrementCount = document.addEventListener("click", handleIncrement);
+const decrementCount = document.addEventListener("click", handleDecrement);
 
 
 // Make an API call
-fetch("http://localhost:3000/profile")
+fetch("https://verifier.meetchopra.com/docs#/")
 	.then((res) => {
 		if (res.ok) {
 			console.log("Your Fetch request was successful");
