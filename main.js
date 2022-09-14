@@ -29,8 +29,9 @@ function slider() {
         function toggleForm(){
 
             const booking = document.getElementById("booking");
-
-            const form = document.querySelector('form');
+const home = document.getElementsByClassName("tm-list");
+          const form = document.querySelector('form');
+          
             window.onload=() => {
                 form.className = "toggle"
                 console.log("come");
@@ -89,8 +90,8 @@ const handleCounter2 = document.getElementById("handleCounter2");
 function Home() {
   fetch("http://localhost:3000/houses")
     .then(response => response.json())
-    .then(data => {
-      data.forEach(element => {
+    .then(houses => {
+      houses.forEach(element => {
         let imageDiv = document.createElement("div")
         imageDiv.innerHTML =`<img src="${element.image}" height="200px" width="200px" alt="image" />`
         document.getElementById("home-img").appendChild(imageDiv)
