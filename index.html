@@ -14,15 +14,17 @@
         <nav class="tm-nav" >
             <div>
                  <ul>
-                     <li class="tm-list"><a href="#">Home</a></li>
+                     <li class="tm-list"><a href="#"><button onClick="Home();" >Home</button></a></li>
                    
-                     <li class="tm-list" id="booking"><a href="#">Booking</a>
+                     <li class="tm-list" id="booking" ><a href="#"><button onClick= "toggleForm()" >Booking</button></a>
                         
                     </li>
                      <li><a href="#">Contact</a></li>
                  </ul>    
                  </div>
              </nav>
+            <div id="home-img" style="display: flex; flex-direction: row; flex: wrap; padding: 10px; justify-content: space-around;">
+               </div>
              <section class="tm-main">
                 <p>Booking</p>
          </section>
@@ -64,7 +66,8 @@
                     <input type="text" name="Date..." class="range" placeholder="Date..."> 
             
                 
-                 <input type="submit" id="sub" value="Proceed"> 
+                 <!-- <input type="submit" id="sub" value="Proceed">  -->
+                 <button onClick="activeReg()">Proceed</button>
                 </div>
                 </div>
                     </form>

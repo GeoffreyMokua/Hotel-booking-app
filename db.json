@@ -1,19 +1,22 @@
 {
-  "posts": [
+  "houses": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "title": "kinoo",
+      "image": "https://media.istockphoto.com/photos/close-up-of-black-luggage-and-surgical-mask-picture-id1344386618?b=1&k=20&m=1344386618&s=170667a&w=0&h=AkUuvSWuQfZEnqoNzBSI4ce7FkwgeH4EGn1xtL_6yqQ="
+    },
+  
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
+      "id": 2,
+      "title": "kinoo",
+      "image": "https://media.istockphoto.com/photos/modern-hotel-room-with-double-bed-night-tables-tv-set-and-cityscape-picture-id1370825295?b=1&k=20&m=1370825295&s=170667a&w=0&h=dYb8EN2jTJE6kKeZUPJULFIMiv0u7h2ENwuOcKiDRH0="
+    },
+   {
+
+    "id": 3,
+      "title": "kinoo",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
   }
+  
+]
 }
