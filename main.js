@@ -1,5 +1,8 @@
 
  // js for sliding images section
+document.addEventListener("DOMContentLoaded", () => {
+   
+ })
 let slideIndex = 0;
 slider();
 
@@ -12,7 +15,7 @@ function slider() {
   slideIndex++;
   if (slideIndex > x.length) {slideIndex = 1}
   x[slideIndex-1].style.display = "block";
-  setTimeout(slider, 10000); // Change image every 2 seconds
+  setTimeout(slider, 10000); // Change image every 1 minute
 } 
 // js for the booking section
     
@@ -32,7 +35,7 @@ function slider() {
                 form.className = "toggle"
                 console.log("come");
             }
-            booking.addEventListener("click", () => {
+            // booking.addEventListener("click", () => {
                 
 
                 if(form.className=="toggle"){
@@ -44,7 +47,7 @@ function slider() {
                     form.className = "toggle";
                     console.log(form.className);
                 }
-            })
+            // })
 
         }
          toggleForm();
@@ -58,17 +61,21 @@ function slider() {
          getDate();
 
          function activeReg() {
-            let btn = document.getElementById("sub");
-            btn.removeAttribute("disabled");
-            btn.style.cursor = "pointer";
-          }
+           let btn = document.getElementById("sub");
+           
+           for (var i=0;i<btn.length;i+=1){
+           btn[i].style.display = 'none';
+}
+}
     // Function to increment count
-    const handleIncrement = () => {
+const handleIncrement = () => {
+  const count = 0;
     count++;
     totalCount.innerHTML = count;
   };
   // Function to decrement count
-   const handleDecrement = () => {
+const handleDecrement = () => {
+     const count = 0;
     count--;
     totalCount.innerHTML = count;
   };
@@ -77,22 +84,23 @@ function slider() {
 const handleCounter1 = document.getElementById("handleCounter1");
 const handleCounter2 = document.getElementById("handleCounter2");
 
-// Add click event to buttons
-const incrementCount = document.addEventListener("click", handleIncrement);
-const decrementCount = document.addEventListener("click", handleDecrement);
-
 
 // Make an API call
-fetch("https://verifier.meetchopra.com/docs#/")
-	.then((res) => {
-		if (res.ok) {
-			console.log("Your Fetch request was successful");
-		} else {
-			console.log("Your Fetch request failed");
-		}
-		return res.json();
-	})
+function Home() {
+  fetch("http://localhost:3000/houses")
+    .then(response => response.json())
+    .then(data => {
+      data.forEach(element => {
+        let imageDiv = document.createElement("div")
+        imageDiv.innerHTML =`<img src="${element.image}" height="200px" width="200px" alt="image" />`
+        document.getElementById("home-img").appendChild(imageDiv)
+        
 
+      })
+     
+    })
+}
+	
 
 
 
